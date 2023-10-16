@@ -2,8 +2,10 @@ import React from "react";
 import blogs from "../blogs";
 
 import Image1 from "../blogs/assets/codefever.jpg";
+import { useNavigate } from "react-router-dom";
 
-const Blog = () => {
+const Blogs = () => {
+  const navigate = useNavigate();
   return (
     <div>
       <p className="text-black mb-2">
@@ -13,7 +15,11 @@ const Blog = () => {
         <h1 className="font-semibold mb-2">Latest blogs</h1>
 
         {blogs.map((b) => (
-          <li className="bg-white grid grid-cols-[128px_1fr] gap-2 items-center rounded-lg hover:bg-slate-100 hover:cursor-pointer">
+          <li
+            key={b.title}
+            onClick={() => navigate(b.nav)}
+            className="bg-white grid grid-cols-[128px_1fr] gap-2 items-center rounded-lg hover:bg-slate-100 hover:cursor-pointer"
+          >
             <img src={`${b.url}`} className="rounded-l-lg" />
             <div className="overflow-hidden mr-4">
               <h6 className="text-sm font-bold">{b.title}</h6>
@@ -26,4 +32,4 @@ const Blog = () => {
   );
 };
 
-export default Blog;
+export default Blogs;

@@ -151,10 +151,10 @@ const RunANode = () => {
           minimaglobal/minima:latest
         </pre>
 
-        <p>
-          Then you log into the MDS system via
-          <pre className="inline-block text-sm"> https://127.0.0.1:9003/</pre>
-        </p>
+        <span className="grid grid-cols-[auto_1fr] items-center">
+          <p>Then you log into the MDS system via</p>
+          <pre className="text-sm"> https://127.0.0.1:9003/</pre>
+        </span>
       </div>
       <p className="mt-6 text-black text-center">
         For more information on how to run a node, you can visit the official

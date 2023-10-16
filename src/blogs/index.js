@@ -15,6 +15,7 @@ const blogs = [
     url: LoveStory,
     description:
       "Hello. I'm Spartacus Rex. The guy who wrote Minima. Paddy Cerri is just the pseudonym I use in the real world, not the digital one.",
+    nav: "alovestory",
   },
   {
     title: "A Tale of Two Cities",

@@ -10,9 +10,10 @@ import {
   createRoutesFromElements,
 } from "react-router-dom";
 import Home from "./pages/Home.jsx";
-import Blog from "./pages/Blog.jsx";
+import Blogs from "./pages/Blogs.jsx";
 import Downloads from "./pages/Downloads.jsx";
 import RunANode from "./pages/RunANode.jsx";
+import ALoveStory from "./Components/ALoveStory/index.jsx";
 
 const router = createHashRouter(
   createRoutesFromElements(
@@ -20,7 +21,8 @@ const router = createHashRouter(
       <Route index element={<Home />} />
       <Route path="runanode" element={<RunANode />} />
       <Route path="downloads" element={<Downloads />} />
-      <Route path="blog" element={<Blog />} />
+      <Route path="blog" element={<Blogs />} />
+      <Route path="blog/alovestory" element={<ALoveStory />} />
     </Route>
   )
 );
