@@ -1,0 +1,26 @@
+{
+  "name": "spartcausrexcom",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "The spartacusrex.com website",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^20.8.5",
+    "@vitejs/plugin-react": "^4.1.0",
+    "autoprefixer": "^10.4.16",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.16.0",
+    "vite": "^4.4.11"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
